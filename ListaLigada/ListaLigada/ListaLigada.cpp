@@ -150,7 +150,20 @@ void excluirElemento()
 
 void buscarElemento()
 {
-	
+	if (primeiro == NULL) {
+		cout << "Lista vazia \n";
+		return;
+	}
+	else {
+		int valor;
+		cout << "Digite o elemento para buscar: ";
+		cin >> valor;
+		if (posicaoElemento(valor) == NULL) {
+			cout << "Elemento não encontrado";
+			return;
+		}
+		cout << "Elemento encontrado na posição";
+	}
 }
 
 
